@@ -1,0 +1,23 @@
+/* global styles */
+body{
+    scroll-behavior: smooth;
+    background-color: #4e5a65;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1, h2, h3, a{
+    font-family: 'Courier New', Courier, monospace;
+    color: antiquewhite;
+    text-transform: uppercase;
+    text-align: center;
+}
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+} 
+footer, nav{
+    font-size: 14pt;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #65594e;
+}
