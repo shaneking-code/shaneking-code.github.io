@@ -1,23 +1,52 @@
-/* global styles */
-body{
-    scroll-behavior: smooth;
-    background-color: #4e5a65;
-    font-family: 'Courier New', Courier, monospace;
+body {
+    font-family:monospace;
 }
-h1, h2, h3, a{
-    font-family: 'Courier New', Courier, monospace;
-    color: antiquewhite;
-    text-transform: uppercase;
-    text-align: center;
+body.darkmode {
+    background: rgb(24, 24, 24);
+    color: white;
+}
+body.lightmode {
+    background: white;
+    color: rgb(24, 24, 24);
+}
+h1{
+    text-align: center !important;
+    font-size: xx-large !important;
+    font-weight: lighter !important;
 }
 p {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 12pt;
-} 
-footer, nav{
-    font-size: 14pt;
-    font-family: 'Courier New', Courier, monospace;
-    text-transform: uppercase;
-    text-align: center;
-    background-color: #65594e;
+    text-align: left;
+    font-size: large;
+}
+nav a:link {
+    padding: justify;
+    text-decoration: none;
+    color: inherit;
+}
+nav a:hover {
+    color:orange;
+}
+nav a:visited {
+    color: orangered;
+}
+hr {
+    align-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 2px;
+    border: solid 2px;
+    
+}
+ul {
+    font-size: xx-large;
+    list-style: none;
+}
+ul li:before{
+    content: "->";
+    padding-right: 8px;
+}
+ul li {
+    padding-bottom: 10px;
+    align-content: left;
+    width: 100%;
 }
