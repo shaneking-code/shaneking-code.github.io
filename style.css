@@ -32,6 +32,16 @@ nav a:hover {
 nav a:visited {
     color: orangered;
 }
+p a:link {
+    text-decoration: none;
+    color: inherit;
+}
+p a:hover {
+    color:orange;
+}
+p a:visited {
+    color: orangered;
+}
 hr {
     align-content: center;
     margin-left: 5px;
