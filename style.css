@@ -2,16 +2,16 @@ body {
     font-family:monospace;
 }
 body.darkmode {
-    background: rgb(24, 24, 24);
+    background: rgb(59, 55, 55);
     color: white;
 }
 body.lightmode {
-    background: white;
-    color: rgb(24, 24, 24);
+    background: rgb(230, 230, 230);
+    color: rgb(59, 55, 55);
 }
 h1{
     text-align: center !important;
-    font-size: xx-large !important;
+    font-size: x-large !important;
     font-weight: lighter !important;
 }
 div {
@@ -51,7 +51,7 @@ hr {
     
 }
 ul {
-    font-size: xx-large;
+    font-size: large;
     list-style: none;
 }
 ul li:before{
