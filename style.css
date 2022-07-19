@@ -1,74 +1,35 @@
 body {
-    font-family:monospace;
-}
-body.darkmode {
-    background: rgb(59, 55, 55);
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1F2937;
     color: white;
+    margin: 0;
+    padding: 0;
 }
-body.lightmode {
-    background: rgb(230, 230, 230);
-    color: rgb(59, 55, 55);
+header {
+    text-align: center;
+    font-size: x-large;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
 }
-h1{
-    text-align: center !important;
-    font-size: x-large !important;
-    font-weight: lighter !important;
-}
-div {
-    font-size: large;
-}
-p {
-    text-align: left;
-    font-size: large;
-}
-nav a:link {
-    padding: justify;
+a {
+    color: white;
     text-decoration: none;
-    color: inherit;
 }
-nav a:hover {
-    color:orange;
+a:hover {
+    color: orange;
 }
-nav a:visited {
+a:visited {
     color: orangered;
 }
-p a:link {
-    text-decoration: none;
-    color: inherit;
-}
-p a:hover {
-    color:orange;
-}
-p a:visited {
-    color: orangered;
-}
-hr {
-    align-content: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    height: 2px;
-    border: solid 2px;
-    
+body > p, body > div {
+    font-size: large;
+    padding: 1em;
 }
 ul {
-    font-size: large;
     list-style: none;
 }
-ul li:before{
-    content: "~>";
-    padding-right: 8px;
-}
-ul li {
-    padding-bottom: 10px;
-    align-content: left;
-    width: 100%;
-}
-#blink {
-    animation-name: blinker;
-    animation-duration: 530ms;
-    animation-iteration-count: infinite;
-}
-@keyframes blinker {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+li:before {
+    content: "*";
+    padding-right: 1em;
 }

@@ -1,106 +1,61 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta lang="en">
-        <meta property="og:title" content="Shane's Personal Site!">
-        <meta property="og:url" content="https://shaneking-code.github.io">
-        <meta property="og:image" content="media/favicon-192.png">
-        <noscript>
-            You need JavaScript to to view the full site.
-        </noscript>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>
-            Shane King
-        </title>
-        <meta name="author" content="Shane King">
-        <meta name="description" content="My personal website for personal information. I am Shane King, a computer science student at Boston College in the class of 2023.">
-        <link rel="stylesheet" href="style.css?version=3">
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSVD0LPPW6">
-        </script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-VSVD0LPPW6');
-        </script>
-    </head>
-    <body class="darkmode">
-        <div style="position:sticky; top: 0px; width: 100%; background: inherit; padding-bottom: 5px">
-            <h1>
-                >Shane King<span id="blink">_</span>
-                <hr>
-                <nav>
-                    <a 
-                        href="resume_main.pdf" 
-                        download="shaneking_resume" 
-                        onclick="raiseConfirm()">
-                        [resume]
-                    </a>
-                    <script>
-                        function raiseConfirm() {
-                            confirm("Download Resume?")
-                        }
-                    </script>
-                    <a 
-                        href="https://github.com/shaneking-code" 
-                        target="_blank">
-                        [github]
-                    </a>
-                    <a 
-                        href="https://linkedin.com/in/shane-king" 
-                        target="_blank">
-                        [linkedin]
-                    </a>
-                    <a 
-                        href="mailto: shane77@icloud.com" 
-                        target="_blank">
-                        [contact]
-                    </a>
-                    <a id="btn"> 
-                        [mode (D/L)]
-                    </a>
-                </nav>
-                <hr>
-            </h1>
-        </div>
-        <div>
-            About me:
-            <p>
-                My name is Shane King. I am a mathematics major at Boston College.
-            </p>
-            <p>
-                Relevant Coursework:
-                <ul>
-                    <li>
-                        Algorithms
-                    </li>
-                    <li>
-                        Data Structures
-                    </li>
-                    <li>
-                        Computer Systems
-                    </li>
-                    <li>
-                        Compilers
-                    </li>
-                    <li>
-                        Linear Algebra
-                    </li>
-                </ul>
-            </p>
-            <p>
-                Projects:
-                <ul>
-                    <li> cN Compiler (Assembly,C) </li>
-                </ul>
-                <ul>
-                    <li> Lyrics Webscraper (Python) </li>
-                </ul>
-                <ul>
-                    <li> This website (HTML,CSS,JS) </li>
-                </ul>
-            </p>
-        </div>
-        <script src="app.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> >Shane King_ </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+            <a
+                href="shaneking-code.github.io">
+                >Shane King_ </a>
+            <nav>
+                <a 
+                    href="resume.pdf"
+                    download="shaneking-resume">
+                    [Resumé]
+                </a>
+                <a 
+                    href="https://github.com/shaneking-code">
+                    [Github]
+                </a>
+                <a 
+                    href="https://linkedin.com/in/shane-king"
+                    target="_blank">
+                    [Linkedin]
+                </a>
+                <a 
+                    href="mailto:shane77@icloud.com"
+                    target="_blank">
+                    [Contact]
+                </a>
+            </nav>
+</header>
+<body>
+    <p> I am a mathematics student at Boston College.<br>Some of my relevant coursework is...
+    <ul>
+        <li>Computer Science I & II (Python, Java)</li>
+        <li>Algorithms</li>
+        <li>Data Structures (Java)</li>
+        <li>Compilers (C, Assembly)</li>
+        <li>Computer Systems (C, Assembly)</li>
+        <li>Linear Algebra</li>
+        <li>Randomness and Computation</li>
+        <li>Logic and Computation</li>
+    </ul>
+    <p> And some projects of mine are... </p>
+    <ul>
+        <li><a href="https://github.com/shaneking-code/LyricsWebscraper">A Webscraper</a> (Python)</li>
+        <li><a href="https://github.com/shaneking-code/TOP-RPS">Rock, Paper, Scissors</a> (HTML, CSS, Javascript)</li>
+        <li><a href="https://github.com/shaneking-code/shaneking-code.github.io">This website</a> (HTML, CSS)</li>
+    </ul>
+    <p> I have also worked on... </p>
+    <ul>
+        <li> Project Euler </li>
+        <li> Advent of Code </li>
+    </ul>
+    <p> Thank you for reading </p>
+</body>
 </html>
