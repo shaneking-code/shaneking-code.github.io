@@ -7,7 +7,7 @@ body {
 }
 header {
     text-align: center;
-    font-size: large;
+    font-size: 3vw;
     padding: 1em;
     display: flex;
     justify-content: space-between;
@@ -23,11 +23,14 @@ a:visited {
     color: orangered;
 }
 body > p, body > div {
-    font-size: large;
+    font-size: 2vw;
     padding: 1em;
 }
 ul {
     list-style: none;
+}
+li {
+    font-size: 2vw;
 }
 li:before {
     content: "*";
