@@ -2,61 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> >Shane King_ </title>
-    <link rel="stylesheet" href="style.css">
+    <title>Shane King</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Space Mono', monospace;
+            line-height: 1.6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            padding: 2rem;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .profile img {
+            width: 100%;
+            max-width: 200px;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .content h1 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+
+        .links a {
+            color: #333;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid #333;
+            transition: all 0.3s ease;
+        }
+
+        .links a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .links {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .links a {
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
 </head>
-<header>
-            <a
-                href="shaneking-code.github.io">
-                >Shane King_ </a>
-            <nav>
-                <a 
-                    href="resume.pdf"
-                    download="shaneking-resume">
-                    [Resumé]
-                </a>
-                <a 
-                    href="https://github.com/shaneking-code"
-                    target="_blank">
-                    [Github]
-                </a>
-                <a 
-                    href="https://linkedin.com/in/shane-king"
-                    target="_blank">
-                    [Linkedin]
-                </a>
-                <a 
-                    href="mailto:shane77@icloud.com"
-                    target="_blank">
-                    [Contact]
-                </a>
-            </nav>
-</header>
 <body>
-    <p> I am a mathematics student at Boston College.<br>Some of my relevant coursework is...
-    <ul>
-        <li>Computer Science I & II (Python, Java)</li>
-        <li>Algorithms</li>
-        <li>Data Structures (Java)</li>
-        <li>Compilers (C, Assembly)</li>
-        <li>Computer Systems (C, Assembly)</li>
-        <li>Linear Algebra</li>
-        <li>Randomness and Computation</li>
-        <li>Logic and Computation</li>
-    </ul>
-    <p>Some projects of mine are... </p>
-    <ul>
-        <li><a href="https://github.com/shaneking-code/LyricsWebscraper">A Webscraper</a> (Python)</li>
-        <li><a href="https://github.com/shaneking-code/TOP-RPS">Rock, Paper, Scissors</a> (HTML, CSS, Javascript)</li>
-        <li><a href="https://github.com/shaneking-code/shaneking-code.github.io">This website</a> (HTML, CSS)</li>
-    </ul>
-    <p> I have also worked on... </p>
-    <ul>
-        <li> Project Euler </li>
-        <li> Advent of Code </li>
-    </ul>
-    <p> Thank you for reading </p>
+    <div class="container">
+        <div class="profile">
+            <img src="headshot.jpg" alt="Shane King">
+        </div>
+        <div class="content">
+            <h1>Shane King</h1>
+            <p>I am a recent Computer Science & Mathematics graduate from Boston College. I enjoy solving problems with code.</p>
+            <div class="links">
+                <a href="https://github.com/shaneking-code" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/shane-king" target="_blank">LinkedIn</a>
+                <a href="mailto:shane77@icloud.com">Email</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
