@@ -7,7 +7,10 @@ License: MIT License (https://github.com/owickstrom/the-monospace-web/blob/main/
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="author" content="Shane King">
     <meta name="description" content="Shane King's Portfolio - Software Engineer">
     <meta name="keywords" content="Software Engineering, Computer Science, Mathematics, Portfolio">
@@ -15,11 +18,13 @@ License: MIT License (https://github.com/owickstrom/the-monospace-web/blob/main/
     <meta name="dcterms.modified" content="2024-03">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Shane King - Portfolio">
+    <meta property="og:image" content="./headshot.jpg">
     <meta property="og:description" content="Shane King's Portfolio - Software Engineer">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
     <title>Shane King - Portfolio</title>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/JetBrainsMono/2.3.0/web/jetbrains-mono.css" as="style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JetBrainsMono/2.3.0/web/jetbrains-mono.css">
     <link rel="icon" type="image/png" href="favicon.png">
     <style>
@@ -75,6 +80,10 @@ License: MIT License (https://github.com/owickstrom/the-monospace-web/blob/main/
 
         .meta-label {
             font-weight: bold;
+        }
+
+        .meta-item div:last-child {
+            word-break: break-word;
         }
 
         .content {
@@ -152,6 +161,9 @@ License: MIT License (https://github.com/owickstrom/the-monospace-web/blob/main/
         .collapsible-content {
             max-height: 1000px;
             overflow: hidden;
+            -webkit-transition: max-height 0.3s ease-out;
+            -moz-transition: max-height 0.3s ease-out;
+            -o-transition: max-height 0.3s ease-out;
             transition: max-height 0.3s ease-out;
         }
 
@@ -200,6 +212,14 @@ License: MIT License (https://github.com/owickstrom/the-monospace-web/blob/main/
             content: "";
             height: calc(var(--line-height) / 2);
             border-left: var(--border-thickness) solid var(--main-text);
+        }
+
+        @supports (-webkit-touch-callout: none) {
+            /* CSS specific to iOS devices */
+            body {
+                padding-left: env(safe-area-inset-left);
+                padding-right: env(safe-area-inset-right);
+            }
         }
     </style>
 </head>
@@ -336,7 +356,6 @@ License: MIT License (https://github.com/owickstrom/the-monospace-web/blob/main/
     <footer class="footer">
         <p><script>document.write(new Date().getFullYear())</script> - Shane King</p>
         <p style="font-size: 0.8rem;">Design inspired by <a href="https://github.com/owickstrom/the-monospace-web">The Monospace Web</a> and <a href="https://x.com/usgraphics">the U.S. Graphics Company</a></p>
-        <p style="font-size: 0.8rem;">Visitors: <span id="visits">loading...</span></p>
     </footer>
 
     <script>
@@ -346,16 +365,6 @@ License: MIT License (https://github.com/owickstrom/the-monospace-web/blob/main/
                 button.nextElementSibling.classList.toggle('collapsed');
             });
         });
-
-        // Visitor counter using CountAPI
-        fetch('https://api.countapi.xyz/hit/shaneking-code.github.io/visits')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('visits').textContent = data.value.toLocaleString();
-            })
-            .catch(error => {
-                document.getElementById('visits').textContent = 'unavailable';
-            });
     </script>
 </body>
 </html>
